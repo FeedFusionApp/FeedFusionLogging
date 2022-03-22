@@ -1,14 +1,13 @@
 import XCTest
-@testable import FeedFusionLogger
+@testable import Logger
 
 final class FeedFusionLoggingTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(FeedFusionLogging().text, "Hello, World!")
         
-        let logger = Logger("Test", "SUB")
+        let logger = Logger("Test", "SUB", level: .verbose)
         
         logger.verbose("Hello There", tag: "test")
         logger.trace("Hello There", tag: "test")
