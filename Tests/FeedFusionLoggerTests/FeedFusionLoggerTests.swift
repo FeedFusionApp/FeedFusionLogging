@@ -16,6 +16,5 @@ final class FeedFusionLoggingTests: XCTestCase {
         logger.notice("Hello There", tag: "test")
         logger.warning("Hello There", tag: "test")
         logger.critical("Hello There", tag: "test")
-
     }
 }
